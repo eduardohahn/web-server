@@ -21,6 +21,7 @@ app.get('/about', middleware.requireAuthentication, function (req, res) {
 	res.send('About US');
 });
 
+
 app.use(express.static(__dirname + '/public'));
 
 app.listen(PORT, function (){
